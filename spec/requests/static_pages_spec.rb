@@ -58,4 +58,19 @@ describe "StaticPages" do
   
     end
   end
+  
+  describe "Special_Nonsense" do
+    
+    it "should have the h1 'Special Nonsense'" do
+      visit '/static_pages/special_nonsense'
+      page.should have_selector('h1', :text => 'Special Nonsense')
+    end
+    
+    it "should have the title 'Special Nonsense'" do
+      visit '/static_pages/special_nonsense'
+      page.should have_selector('title',
+                      :text => "Ruby on Rails Tutorial Sample App | Special Nonsense" )
+  
+    end
+  end
 end

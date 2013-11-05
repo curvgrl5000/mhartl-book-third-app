@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
   
   def contact_us
   end
+  
+  def special_nonsense
+  end
+  
 end
